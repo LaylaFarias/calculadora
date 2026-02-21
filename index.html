@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-title">IMC Health</div>
+    <div class="nav-links">
+      <a href="index.html">Calculadora</a>
+      <a href="dicas.html">Dicas</a>
+      <a href="historico.html">Histórico</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h1>Calculadora de IMC</h1>
+      <p class="subtitle">Descubra sua classificação corporal</p>
+
+      <label>Peso (kg)</label>
+      <input id="weight" type="number" step="0.1" placeholder="Ex: 70">
+
+      <label>Altura (m)</label>
+      <input id="height" type="number" step="0.01" placeholder="Ex: 1.75">
+
+      <div id="error" class="error"></div>
+
+      <button id="calcBtn">Calcular IMC</button>
+
+      <div id="result" class="result">
+        <div id="bmi" class="bmi-value"></div>
+        <div id="badge" class="badge"></div>
+        <div id="message" class="message"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
